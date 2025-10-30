@@ -13,10 +13,6 @@ fetch('modules/nav.html')
 document.body.appendChild(document.createElement("footer"));
 fetch('modules/footer.html').then(res => res.text()).then(data => {document.getElementsByTagName('footer')[0].innerHTML = data;});
 
-
-// function goFun() {
-//     window.location.href = "https://mazenturk201.github.io/LoveChoice/";
-// }
 function goFun(idSection) {
   setTimeout(() => {
   window.location.hash = idSection;
