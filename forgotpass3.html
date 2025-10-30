@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Styles/Turkstyle.css">
+    <link rel="shortcut icon" href="images/Globe americas.png" type="image/x-icon">
+    <title>Forgot Password</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="headerTitle">Reset Your Account</h1>
+        <p class="bodyTitle">Thanks For join our Website.</p>
+        <label class="label">
+            <p class="inputTitle">New Password</p>
+            <span class="icon">
+                <i class="bi bi-eye"></i>
+            </span>
+            <input id="password" type="password" class="input" placeholder="Enter your password" autocomplete="off" />
+        </label>
+        <div class="retePass">
+            <div class="meter">
+                <div class="bar" id="bar"></div>
+            </div>
+            <div class="text" id="strength"></div>
+        </div>
+        <label class="label">
+            <p class="inputTitle">Confirm Password</p>
+            <span class="icon">
+                <i class="bi bi-eye"></i>
+            </span>
+            <input type="password" class="input" placeholder="Confirm your password" autocomplete="off" />
+        </label>
+        <a href="login.html" class="btn">Reset</a>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/password.js"></script>
+</body>
+
+</html>

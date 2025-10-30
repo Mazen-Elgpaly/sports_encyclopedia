@@ -1,0 +1,118 @@
+
+nav {
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+  /* position: relative; */
+  overflow: hidden;
+
+  & ul {
+    margin-left: 7.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: black; */
+
+    & li {
+      flex: 1;
+      width: 100%;
+    }
+  }
+}
+
+
+
+.navtitle {
+  font-family: TurkLogo;
+  font-size: 1.8rem;
+  text-align: center;
+  text-shadow: var(--hover) 0px 0px 1px, var(--hover) 0px 0px 5px, var(--hover) 0px 0px 15px;
+  transform: translateY(50px);
+  animation: fromtop 0.5s ease-out 0.5s forwards;
+}
+
+.container-fluid a {
+  transform: translateX(-50px);
+  animation: fromleft 0.5s ease-out forwards;
+}
+
+.bg-body-tertiary {
+  background-color: var(--bg-color) !important;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.navbar-toggler {
+  border: none;
+
+  &:focus,
+  &:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+
+  &:nth-child(1) {
+    animation: fromleft 0.5s ease-out forwards;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    /* right: 0; */
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--hover);
+    transition: width 200ms ease-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.navbtn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: -12.5%;
+}
+
+
+footer {
+  text-align: center;
+  margin: 10px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  bottom: 0;
+  align-content: center;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.bg-login {
+  background-image: linear-gradient(to bottom, var(--bg-color), var(--darcker));
+}

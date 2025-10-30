@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="Styles/Turkstyle.css">
+  <link rel="shortcut icon" href="images/Globe americas.png" type="image/x-icon">
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="headerTitle">Create Your Account</h1>
+    <p class="bodyTitle">Join our Community of sports enithusiasts.</p>
+    <label class="label">
+      <p class="inputTitle">Full Name</p>
+      <span class="icon">
+        <i class="bi bi-person"></i>
+      </span>
+      <input type="text" class="input" placeholder="Enter name" autocomplete="off" autofocus />
+    </label>
+    <label class="label">
+      <p class="inputTitle">Email Address</p>
+      <span class="icon">
+        <i class="bi bi-envelope"></i>
+      </span>
+      <input type="email" class="input" placeholder="Enter your email address" autocomplete="off" />
+    </label>
+    <label class="label">
+      <p class="inputTitle">Password</p>
+      <span class="icon">
+        <i class="bi bi-eye"></i>
+      </span>
+      <input id="password" type="password" class="input" placeholder="Enter your password" autocomplete="off" oninput="confirm.pattern=this.value"/>
+    </label>
+    <div class="retePass">
+      <div class="meter">
+        <div class="bar" id="bar"></div>
+      </div>
+      <div class="text" id="strength"></div>
+    </div>
+    <label class="label">
+      <p class="inputTitle">Confirm Password</p>
+      <span class="icon">
+        <i class="bi bi-eye"></i>
+      </span>
+      <input type="password" class="input" placeholder="Confirm your password" autocomplete="off" pattern=""/>
+    </label>
+    <div class="agree_to_TAC">
+      <input type="checkbox" name="confirm" id="confirm">
+      <span>I agree to the <a href="">Terms and Conditions</a></span>
+    </div>
+    <a href="index.html" class="btn">Create Account</a>
+    <p class="split">Or continue with</p>
+    <div class="anotherauth">
+      <a href="" class="anotherauthbtn">
+        <i class="bi bi-google"></i>
+        <p>Google</p>
+      </a>
+      <a href="" class="anotherauthbtn">
+        <i class="bi bi-facebook"></i>
+        <p>Facebook</p>
+      </a>
+    </div>
+    <span class="alreadyhave">Already have an account? <a href="login.html">Login</a></span>
+  </div>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/password.js"></script>
+</body>
+
+</html>
