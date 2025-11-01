@@ -113,7 +113,7 @@ a {
 
 .navtitle {
     font-family: TurkLogo;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
     text-shadow: var(--hover) 0px 0px 1px, var(--hover) 0px 0px 5px, var(--hover) 0px 0px 15px;
     transform: translateY(50px);
@@ -186,6 +186,7 @@ footer {
     bottom: 0;
     align-content: center;
     animation: fadeIn 1.5s ease-out forwards;
+    font-size: clamp(16px, calc(1rem + 0.5vw), 24px);
 }
 
 .bg-login {
@@ -218,5 +219,4 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
