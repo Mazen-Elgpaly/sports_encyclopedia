@@ -32,6 +32,16 @@
     }
 }
 
+@keyframes fromtop {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -84,6 +94,7 @@ nav {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        color: var(--text-color);
         /* background-color: black; */
 
         & li {
@@ -136,10 +147,6 @@ a {
     padding-bottom: 2px;
     color: var(--text-color);
 
-    &:nth-child(1) {
-        animation: fromleft 0.5s ease-out forwards;
-    }
-
     &::after {
         content: "";
         position: absolute;
@@ -148,8 +155,13 @@ a {
         bottom: 0;
         width: 0;
         height: 2px;
+        color: var(--text-color);
         background: var(--hover);
         transition: width 200ms ease-out;
+    }
+
+    &:focus {
+        color: var(--text-color);
     }
 
     &:hover::after {
@@ -170,10 +182,6 @@ a {
 footer {
     text-align: center;
     margin: 10px;
-    /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
     position: relative;
     bottom: 0;
     align-content: center;
@@ -193,6 +201,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: var(--text-color);
+    border-radius: 15px;
 
     &:hover {
         background-color: var(--hover);
@@ -204,13 +213,10 @@ footer {
     background-color: transparent;
 }
 
-/* .nav-link .active{
+.nav-link .active {
     color: var(--text-color);
-} */
+}
 
 
 @media (max-width: 768px) {
-    .nav-link {
-        left: -50px;
-    }
 }
